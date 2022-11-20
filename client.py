@@ -103,7 +103,7 @@ class Client:
 def mainMenu(client):
     while True:
         selection = input("Enter one of the following commands:\n\t%exit\n\t%post [message subject]\n\t%users\n\t%leave\n\t%message [message ID]\n\t%groups\n\t%groupjoin [groupID]\n\t%grouppost [groupID] [message subject]\n\t%groupusers [groupID]\n\t%groupleave [groupID]\n\t%groupmessage [groupID] [messageID]\n")
-        selection = parseSelection
+        selection = parseSelection(selection)
 
         if DEBUG:
             print(selection)
